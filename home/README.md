@@ -16,9 +16,10 @@ Reading the data might take longer, one way to fix this issue can be by creating
 Next, wranggling data using PYSPARK that will allow us to extract columns to create different tables. You can find that we read data as json, filtered those data and ectracted the time date from timestamp and wrote it back as a parquet files stored into S3 bucket in our own AWS account. Concluding this process with the FACT TABLE (Songplay Table) that will join the log_data along with song_data using title, duration, and artist name to be written again as a table in parquet back to the S3 Bucket. 
 
 ## Project Parts
-1. dl.cfg: the amazon configuration file that holds the creds of the AWS account which will hold the output bucket to write into.
-2. etly.py: Holds the actual logic of reading from the public udacity S3 bucket, wrangling the data and writting the output to your own AWS bucket
-3. you will notice a directory will get created everytime you run the file and that ensures your code is working and the output files are being written into the s3 directory. 
+1. **dl.cfg:** the amazon configuration file that holds the creds of the AWS account which will hold the output bucket to write into.
+2. **etly.py:** Holds the actual logic of reading from the public udacity S3 bucket, wrangling the data and writting the output to your own AWS bucket
+
+*Note: you will notice a directory will get created everytime you run the file and that ensures your code is working and the output files are being written into the s3 directory.*
 
 ## Sparkify Execution 
 
